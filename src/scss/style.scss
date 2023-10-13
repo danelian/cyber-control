@@ -7,8 +7,8 @@
   --font-family: "Comfortaa", sans-serif;
   --font-montserrat: "Montserrat-Extrabold", "Comfortaa", sans-serif;
 
-  --content-width: 1160px;
-  --container-offset: 15px;
+  --content-width: 100%;
+  --container-offset: 30px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
@@ -16,7 +16,7 @@
   --black-color: #131313;
   --font-color: #131313;
 
-  --global-color: #E88320;
+  --global-color: #90CC31;
 }
 
 /***** Mixins *****/
@@ -50,7 +50,7 @@
 
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/header";
-@import "blocks/footer";
+// @import "blocks/footer";
 // @import "blocks/breadcrumbs";
 // @import "blocks/pagination";
 // @import "blocks/tags";
