@@ -147,10 +147,8 @@
             }
           }
         }
-      }
-      
-      /*Rotate icon and add shadows*/      
-      &.accordion-open { 
+      }    
+      &.open { 
         .btn-reset {
           transform: rotate(-180deg);
         }
