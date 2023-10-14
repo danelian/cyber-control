@@ -1,4 +1,11 @@
 .hero {
+  padding-bottom: 40px;
+  .fp-overflow {
+    height: 100%;
+  }
+  .custom-container {
+    height: 100%;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -8,7 +15,10 @@
     padding: 40px 24px;
     width: 100%;
     min-height: 600px;
+    height: 100%;
     border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   &__subtitle {
     margin-top: 0;

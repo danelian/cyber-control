@@ -33,6 +33,30 @@
 	}
 }
 
+.btn-second {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 28px;
+	min-height: 38px;
+	text-align: center;
+	color: #7b7b7b;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	border: 0;outline: none;
+	border-radius: 10px;
+	background-color: #2B2B2B;
+	transition: .3s ease;
+	&:hover {
+		background-color: var(--global-color);
+	}
+	&.disabled {
+		opacity: 0.4;
+		cursor: auto;
+	}
+}
+
 .btn-icon {
 	display: inline-flex;
 	align-items: center;
