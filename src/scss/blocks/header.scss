@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: #F5F5F5;
+  background: transparent;
   z-index: 500;
   transition: position 10s ease-in, background-color 0.3s ease-in;
   &__left {

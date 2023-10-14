@@ -157,3 +157,5 @@ var myFullpage = new fullpage('#fullpage', {
 	const firstItemContent = productsItems[0].querySelector('.products__a-content')
 	firstItemContent.style.height = firstItemContent.scrollHeight + 'px'
 	productsItems[0].classList.add('open')
+
+	

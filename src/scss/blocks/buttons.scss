@@ -57,27 +57,39 @@
 	}
 }
 
-.btn-icon {
+.btn-back {
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
-	text-align: center;
-	position: relative;
-	width: 40px;
-	height: 40px;
-	outline: none;
-  border: 0;
-  background: none;
-	transition: .3s ease;
-	cursor: pointer;
-	z-index: 1;
-  i {
-    font-size: 30px;
-    line-height: 1;
-    color: var(--font-color);
-		transition: .3s ease;
-    &:hover {
-      color: var(--global-color);
-    }
-  }
+	justify-content: flex-start;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #212121;
+	svg {
+		margin-right: 20px;
+		width: 13px;
+		height: 26px;
+	}
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.btn-share {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: #212121;
+	svg {
+		margin-left: 16px;
+	}
+	&:hover {
+		color: var(--global-color);
+	}
 }
