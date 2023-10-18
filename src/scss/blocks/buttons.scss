@@ -25,7 +25,31 @@
 	background-color: var(--global-color);
 	transition: .3s ease;
 	&:hover {
-		opacity: 0.9;
+		opacity: 0.8;
+	}
+	&.disabled {
+		opacity: 0.4;
+		cursor: auto;
+	}
+}
+.btn-black {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 28px;
+	min-height: 48px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	border: 0;outline: none;
+	border-radius: 10px;
+	background-color: #000;
+	transition: .3s ease;
+	&:hover {
+		color: #fff;
+		opacity: 0.8;
 	}
 	&.disabled {
 		opacity: 0.4;
