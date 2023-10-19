@@ -48,3 +48,22 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
 	display: none;
 }
+
+@include tablet {
+	/*-----form-----*/
+	.form {
+		&-label {
+			margin-bottom: 2px;
+			font-size: 16px;
+		}
+		&-group {
+			margin-bottom: 24px;
+		}
+		&-input {
+			height: 40px;
+			padding: 11px 12px;
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+}

@@ -1004,6 +1004,22 @@ input[type=number]::-webkit-inner-spin-button {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  /*-----form-----*/
+  .form-label {
+    margin-bottom: 2px;
+    font-size: 16px;
+  }
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form-input {
+    height: 40px;
+    padding: 11px 12px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
 /***** SECTIONS GLOBAL (Widgets) *****/
 .hero {
   padding-bottom: 40px;
@@ -2384,6 +2400,96 @@ input[type=number]::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1560px) {
+  .contactsbl {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .contactsbl {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contactsbl__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .contactsbl__left {
+    width: calc(50% - 15px);
+  }
+  .contactsbl__left .address {
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
+  .contactsbl__left .socials {
+    margin-bottom: 28px;
+  }
+  .contactsbl__left .phone {
+    font-size: 22px;
+  }
+  .contactsbl__left .email {
+    font-size: 18px;
+  }
+  .contactsbl__right .btn {
+    margin-top: 20px;
+  }
+  .contactsbl__right .btn-black {
+    margin-top: 36px;
+  }
+  .map {
+    margin-top: 28px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contactsbl__container {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .contactsbl__left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contactsbl__left .address {
+    margin-bottom: 20px;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .contactsbl__left .socials {
+    margin-bottom: 20px;
+  }
+  .contactsbl__left .phone {
+    font-size: 20px;
+  }
+  .contactsbl__left .email {
+    font-size: 16px;
+  }
+  .contactsbl__right {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .contactsbl__right .btn {
+    margin-top: 4px;
+    width: 100%;
+  }
+  .contactsbl__right .btn-black {
+    margin-top: 28px;
+    width: 100%;
+  }
+  .contactsbl .form {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contactsbl {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contactsbl__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
 .page-projects {
   background: #212121;
 }
