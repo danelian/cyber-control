@@ -791,7 +791,6 @@ th {
   width: 100%;
 }
 .footer__middle .address {
-  margin-bottom: 40px;
   max-width: 460px;
   font-size: 20px;
   font-style: normal;
@@ -831,6 +830,109 @@ th {
   color: var(--global-color);
 }
 
+@media screen and (max-width: 1366px) {
+  /*-----footer-----*/
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+  .footer__top {
+    margin-bottom: 28px;
+  }
+  .footer__logo {
+    margin-right: 20px;
+  }
+  .footer__contacts {
+    margin-left: 20px;
+  }
+  .footer__contacts .phone {
+    font-size: 22px;
+  }
+  .footer__contacts .email {
+    font-size: 18px;
+  }
+  .footer__middle .address {
+    font-size: 18px;
+  }
+  .footer__link {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*-----footer-----*/
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+  .footer__top {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .footer__contacts {
+    text-align: center;
+    margin-left: 0;
+  }
+  .footer__contacts .phone {
+    margin-bottom: 6px;
+  }
+  .footer__list {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .footer__middle {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__middle .address {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .footer__middle .btn-second {
+    min-height: 40px;
+  }
+  .footer__bottom {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer .socials {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer__link {
+    margin-left: 0;
+    margin-top: 1rem;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /*-----footer-----*/
+  .footer {
+    padding-top: 32px;
+  }
+  .footer__contacts .phone {
+    font-size: 20px;
+  }
+  .footer__contacts .email {
+    font-size: 16px;
+  }
+  .footer__list {
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  .footer__list li a {
+    font-size: 17px;
+  }
+  .footer__middle .address {
+    font-size: 15px;
+  }
+}
 .swiper {
   max-width: 100%;
   width: 100%;
@@ -2478,6 +2580,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .contactsbl .form {
     justify-content: flex-start;
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {

@@ -72,7 +72,6 @@
     margin-bottom: 32px;
     width: 100%;
     .address {
-      margin-bottom: 40px;
       max-width: 460px;
       font-size: 20px;
       font-style: normal;
@@ -110,6 +109,120 @@
     color: #565656;
     &:hover {
       color: var(--global-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  /*-----footer-----*/
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 28px;
+    &__top {
+      margin-bottom: 28px;
+    }
+    &__logo {
+      margin-right: 20px;
+    }
+    &__contacts {
+      margin-left: 20px;
+      .phone {
+        font-size: 22px;
+      }
+      .email {
+        font-size: 18px;
+      }
+    }
+    &__middle {
+      .address {
+        font-size: 18px;
+      }
+    }
+    &__link {
+      font-size: 18px;
+    }
+  }
+}
+
+@include tablet {
+  /*-----footer-----*/
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 28px;
+    &__top {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__logo {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__contacts {
+      text-align: center;
+      margin-left: 0;
+      .phone {
+        margin-bottom: 6px;
+      }
+    }
+    &__list {
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+    &__middle {
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      .address {
+        max-width: 100%;
+        margin-right: 0;
+      }
+      .btn-second {
+        min-height: 40px;
+      }
+    }
+    &__bottom {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .socials {
+      width: 100%;
+      justify-content: center;
+    }
+    &__link {
+      margin-left: 0;
+      margin-top: 1rem;
+      font-size: 16px;
+    }
+  }
+}
+
+@include mobile {
+  /*-----footer-----*/
+  .footer {
+    padding-top: 32px;
+    &__contacts {
+      .phone {
+        font-size: 20px;
+      }
+      .email {
+        font-size: 16px;
+      }
+    }
+    &__list {
+      margin-top: 4px;
+      margin-bottom: 16px;
+      li {
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+    &__middle {
+      .address {
+        font-size: 15px;
+      }
     }
   }
 }
