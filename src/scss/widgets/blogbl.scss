@@ -66,3 +66,107 @@
     margin-top: 40px;
   }
 }
+
+@media screen and (max-width: 1439px) {
+  .blogbl {
+    &__cards {
+      .blog-card {
+        &__content {
+          width: 100%;
+          border-radius: 15px;
+        }
+        &:nth-child(1) {
+          .blog-card__content {
+            width: 100%;
+          }
+          .blog-card__title {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .blogbl {
+    &__cards {
+      justify-content: flex-start;
+      .blog-card {
+        padding: 16px;
+        border-radius: 15px;
+        height: auto;
+        min-height: 260px;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+        &__arrow {
+          width: 40px;
+          margin-left: 12px;
+        }
+        &:nth-child(1) {
+          padding: 16px;
+          height: auto;
+          margin-bottom: 20px;
+          .blog-card__title {
+            font-size: 19px;
+          }
+          .blog-card__arrow {
+            width: 40px;
+            height: 40px;
+            margin-left: 12px;
+          }
+        }
+        &:nth-child(2) {
+          width: 100%;
+          margin-right: 0;
+        }
+        &:nth-child(3) {
+          width: 100%;
+        }
+      }
+    }
+    .link-center {
+      margin-top: 24px;
+    }
+  }
+}
+
+@include mobile {
+  .blogbl {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__cards {
+      .blog-card {
+        padding: 12px;
+        min-height: 200px;
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
+        &__content {
+          padding: 8px 12px;
+        }
+        &__title {
+          font-size: 17px;
+        }
+        &__arrow {
+          width: 30px;
+        }
+        &:nth-child(1) {
+          padding: 12px;
+          margin-bottom: 12px;
+          .blog-card__title {
+            font-size: 17px;
+          }
+          .blog-card__arrow {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .link-center {
+      margin-top: 20px;
+    }
+  }
+}
