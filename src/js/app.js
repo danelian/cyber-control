@@ -87,3 +87,13 @@
 		},
 		mousewheel: true,
 	});
+	var projectsSwiper = new Swiper(".projectsSwiper", {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		centeredSlides: true,
+		loop: true,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
