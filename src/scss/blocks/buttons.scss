@@ -120,7 +120,8 @@
 
 @include tablet {
 	.btn,
-	.btn-back {
+	.btn-back,
+	.btn-second {
 		padding: 10px 20px;
 		min-height: 40px;
 		font-size: 14px;
