@@ -53,6 +53,11 @@ body {
   max-width: var(--container-width);
 }
 
+@media screen and (max-width: 1024px) {
+  .custom-container {
+    padding: 0 15px;
+  }
+}
 .link-center {
   display: flex;
   align-items: center;
@@ -470,26 +475,15 @@ th {
   color: var(--global-color);
 }
 
-/*-----title----*/
-.section-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  color: var(--font-color);
+@media screen and (max-width: 1024px) {
+  .btn,
+.btn-back {
+    padding: 10px 20px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
-.section-text:not(:last-child) {
-  margin-bottom: 1rem;
-}
-.section-text p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.section-text p:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
 /***** COMPONENTS GLOBAL *****/
 /*----header-----*/
 .header {
@@ -1074,6 +1068,70 @@ input[type=number]::-webkit-inner-spin-button {
   height: 30px;
 }
 
+@media screen and (max-width: 1560px) {
+  .hero__wrapper {
+    min-height: 600px;
+  }
+  .hero__subtitle {
+    margin-bottom: 16px;
+    font-size: 26px;
+  }
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero__title-wrapper {
+    max-width: 700px;
+    margin-bottom: 36px;
+  }
+  .hero__decor {
+    left: 30px;
+    bottom: 30px;
+    width: 280px;
+  }
+  .hero__scrolldown {
+    bottom: 20px;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero__subtitle {
+    font-size: 22px;
+  }
+  .hero__title {
+    font-size: 32px;
+  }
+  .hero__decor {
+    left: 10px;
+    bottom: 16px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__wrapper {
+    min-height: 400px;
+    padding: 40px 10px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .hero__title {
+    font-size: 21px;
+  }
+  .hero__decor {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .hero__title {
+    font-size: 19px;
+  }
+  .hero__title-wrapper {
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+  }
+}
 .products {
   padding-top: 100px;
   padding-bottom: 150px;

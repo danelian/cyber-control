@@ -38,6 +38,11 @@ body {
 	padding: 0 var(--container-offset);
 	max-width: var(--container-width);
 }
+@include tablet {
+	.custom-container {
+		padding: 0 15px;
+	}
+}
 .link-center {
 	display: flex;
 	align-items: center;

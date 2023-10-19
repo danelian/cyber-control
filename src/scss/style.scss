@@ -22,7 +22,7 @@
   padding: 0;
 }
 @mixin desktop {
-  @media screen and (max-width: 1190px) {
+  @media screen and (max-width: 1560px) {
     @content;
   }
 }
@@ -41,7 +41,6 @@
 /***** BLOCKS GLOBAL *****/
 @import "general";
 @import "blocks/buttons";
-@import "blocks/title";
 
 
 /***** COMPONENTS GLOBAL *****/

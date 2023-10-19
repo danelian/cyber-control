@@ -117,3 +117,13 @@
 		color: var(--global-color);
 	}
 }
+
+@include tablet {
+	.btn,
+	.btn-back {
+		padding: 10px 20px;
+		min-height: 40px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
