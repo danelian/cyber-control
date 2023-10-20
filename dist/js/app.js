@@ -89,14 +89,27 @@
 		});
 	}
 	var projectsSwiper = new Swiper(".projectsSwiper", {
-		slidesPerView: 3,
-		spaceBetween: 30,
+		slidesPerView: 1,
+		spaceBetween: 20,
 		centeredSlides: true,
 		loop: true,
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 20
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			1280: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			}
+		}
 	});
 	var projectSwiper = new Swiper(".projectSwiper", {
 		slidesPerView: 4,

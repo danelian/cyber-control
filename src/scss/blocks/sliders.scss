@@ -90,9 +90,6 @@
   background-image: url('../img/chevron-right-white.svg');
 }
 
-.default-wrapper-dark .swiper-bottom .swiper-pagination-fraction {
-  color: var(--lightGrey-color);
-}
 .swiper-nav {
   display: flex;
   align-items: center;
@@ -104,5 +101,17 @@
     position: relative;
     top: auto;left: auto;right: auto;bottom: auto;
     margin-top: 0;
+  }
+}
+
+@include tablet {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    &::after {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

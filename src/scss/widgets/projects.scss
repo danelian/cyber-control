@@ -78,3 +78,53 @@
     }
   }
 }
+
+@media screen and (max-width: 1279px) {
+  .projects {
+    &bl {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    &Swiper {
+      .swiper-slide {
+        border-radius: 15px;
+      }
+      .swiper-nav {
+        margin-top: 36px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .projects {
+    &bl {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &Swiper {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .swiper-nav {
+        margin-top: 28px;
+      }
+    }
+    &-card {
+      padding: 16px;
+      border-radius: 15px;
+      &__title {
+        margin-bottom: 14px;
+        font-size: 24px;
+        text-align: left;
+      }
+      &__descr {
+        margin-bottom: 28px;
+        font-size: 15px;
+      }
+      &__blur,
+      &__img {
+        border-radius: 15px;
+      }
+    }
+  }
+}
