@@ -484,6 +484,35 @@ th {
     font-size: 14px;
     line-height: 18px;
   }
+  .btn-back {
+    font-size: 20px;
+  }
+  .btn-back svg {
+    margin-right: 12px;
+    width: auto;
+    height: 16px;
+  }
+  .btn-share {
+    font-size: 20px;
+  }
+  .btn-share svg {
+    margin-left: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn-back {
+    font-size: 17px;
+  }
+  .btn-back svg {
+    height: 14px;
+  }
+  .btn-share {
+    font-size: 17px;
+  }
+  .btn-share svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 /***** COMPONENTS GLOBAL *****/
 /*----header-----*/
@@ -2320,6 +2349,84 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .single-post {
+    height: auto;
+    max-height: none;
+    overflow: auto;
+  }
+  .article {
+    padding-bottom: 40px;
+    height: auto;
+  }
+  .article__head {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .article__head-col:nth-child(1) {
+    width: 100%;
+    margin: 8px 0 24px 0;
+  }
+  .article__head-col:nth-child(2) {
+    width: 100%;
+  }
+  .article__head h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    display: inline-flex;
+    overflow: visible;
+  }
+  .article__container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .article__img {
+    margin-top: 32px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin-right: 0;
+    max-height: none;
+  }
+  .article__img img {
+    border-radius: 15px;
+  }
+  .article__right {
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  .article__right .btn-share {
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  .singleSwiper {
+    border-radius: 15px;
+    height: 100%;
+  }
+  .singleSwiper .swiper-slide {
+    font-size: 17px;
+    height: auto;
+    padding: 20px;
+  }
+  .singleSwiper .swiper-slide p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .article__head h1 {
+    font-size: 24px;
+  }
+  .singleSwiper .swiper-slide {
+    font-size: 16px;
+    padding: 16px;
+  }
+  .singleSwiper .swiper-slide p {
+    font-size: 16px;
+  }
+}
 .blogbl {
   padding-top: 60px;
   padding-bottom: 60px;

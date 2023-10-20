@@ -127,4 +127,36 @@
 		font-size: 14px;
 		line-height: 18px;
 	}
+
+	.btn-back {
+		font-size: 20px;
+		svg {
+			margin-right: 12px;
+			width: auto;
+			height: 16px;
+		}
+	}
+	
+	.btn-share {
+		font-size: 20px;
+		svg {
+			margin-left: 12px;
+		}
+	}
+}
+
+@include mobile {
+	.btn-back {
+		font-size: 17px;
+		svg {
+			height: 14px;
+		}
+	}
+	.btn-share {
+		font-size: 17px;
+		svg {
+			width: 40px;
+			height: 40px;
+		}
+	}
 }

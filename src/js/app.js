@@ -77,15 +77,17 @@
 
 	
 	// -------------------- SWIPER -------------------------
-	var swiper = new Swiper(".singleSwiper", {
-		direction: "vertical",
-		slidesPerView: "auto",
-		freeMode: true,
-		scrollbar: {
-			el: ".swiper-scrollbar",
-		},
-		mousewheel: true,
-	});
+  if (window.innerWidth >= 1025) { 
+		var swiper = new Swiper(".singleSwiper", {
+			direction: "vertical",
+			slidesPerView: "auto",
+			freeMode: true,
+			scrollbar: {
+				el: ".swiper-scrollbar",
+			},
+			mousewheel: true,
+		});
+	}
 	var projectsSwiper = new Swiper(".projectsSwiper", {
 		slidesPerView: 3,
 		spaceBetween: 30,
