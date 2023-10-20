@@ -547,6 +547,7 @@ th {
   top: 0;
   right: -100%;
   padding: 24px 28px 16px 28px;
+  max-width: calc(100% - 15px);
   width: 400px;
   height: 100vh;
   border-top-left-radius: 20px;
@@ -613,6 +614,7 @@ th {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  width: 100%;
   padding-left: 24px;
   list-style: none;
   margin: 0;
@@ -715,6 +717,71 @@ th {
   z-index: 1000;
 }
 
+@media screen and (max-width: 1024px) {
+  /*----header-----*/
+  .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .header__logo {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    height: 50px;
+  }
+  .header__logo img {
+    width: auto;
+    height: 50px;
+  }
+  .header__container {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .header__left {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .header .form-select:not(:last-child) {
+    margin-right: 20px;
+  }
+  .nav__menu {
+    padding: 16px 20px 16px 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .nav__menu .socials {
+    margin: 20px 0;
+  }
+  .nav__list > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .nav__list > li > a {
+    font-size: 24px;
+  }
+  .nav__list > li .sub-menu li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .nav__header-logo {
+    width: auto;
+    height: 50px;
+  }
+  .nav__bottom-link {
+    font-size: 18px;
+  }
+  .nav__toggle {
+    width: 40px;
+    height: 40px;
+  }
+  .nav__toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+  .nav__close svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 /*-----footer-----*/
 .footer {
   position: relative;
