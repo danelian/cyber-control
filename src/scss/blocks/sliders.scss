@@ -60,6 +60,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  flex-shrink: 0;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -97,7 +98,8 @@
   flex-direction: row;
   gap: 20px;
   .swiper-button-prev,
-  .swiper-button-next {
+  .swiper-button-next,
+  .swiper-pagination {
     position: relative;
     top: auto;left: auto;right: auto;bottom: auto;
     margin-top: 0;
@@ -113,5 +115,23 @@
       width: 20px;
       height: 20px;
     }
+  }
+  /* swiper-bullets styling */
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+  }
+  .swiper-pagination-bullet-active {
+    &:before {
+      width: 5px;
+      height: 5px;
+    }
+  }
+}
+
+@include mobile {
+  .swiper-nav {
+    gap: 12px;
   }
 }
